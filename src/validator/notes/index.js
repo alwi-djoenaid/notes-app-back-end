@@ -8,12 +8,6 @@ const NotesValidator = {
       throw new InvariantError(validationResult.error.message);
     }
   },
-  validateNoteIdQuery: (query) => {
-    const validationResult = NoteQuerySchema.validate(query);
-    if (validationResult.error) {
-      throw new Error(validationResult.error.message);
-    }
-  },
 };
 
 module.exports = NotesValidator;
