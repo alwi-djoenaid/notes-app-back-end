@@ -15,8 +15,6 @@ class UsersHandler {
 
       const { username, password, fullname } = request.payload;
 
-      console.log(username, password, payload);
-
       const userId = await this._service.addUser({ username, password, fullname });
 
       const response = h.response({
