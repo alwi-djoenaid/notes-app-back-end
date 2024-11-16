@@ -31,6 +31,9 @@ class UsersHandler {
 
     } catch (error) {
       console.log(error);
+
+      response.code(500);
+      return response;
     }
   }
 
