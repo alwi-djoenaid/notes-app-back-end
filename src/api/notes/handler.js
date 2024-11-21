@@ -66,13 +66,6 @@ class NotesHandler {
     await this._service.verifyNoteAccess(id, credentialId);
     await this._service.editNoteById(id, request.payload);
 
-    // try {
-    //   await this._service.verifyNoteAccess(id, credentialId);
-    // await this._service.editNoteById(id, request.payload);
-    // } catch (error) {
-    //   console.log(error)
-    // }
-
     return {
       status: 'success',
       message: 'Catatan berhasil diperbarui',
